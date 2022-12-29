@@ -2,7 +2,6 @@
 const { User } = require('../models');
 const { AuthenticationError } = require('apollo-server-express');
 const { signToken } = require('../utils/auth');
-const { sign } = require('jsonwebtoken');
 
 //Resolvers
 const resolvers = {
