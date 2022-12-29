@@ -40,7 +40,7 @@ const SavedBooks = () => {
   };
 
   // if data isn't here yet, say so
-  if (!userData.loading) {
+  if (userData.loading) {
     return <h2>LOADING...</h2>;
   }
 
