@@ -29,13 +29,11 @@ function App() {
   return (
     <ApolloProvider client={client}>
       <Router>
-        <>
           <Navbar />
             <Routes>
-              <Route exact path='/' component={SearchBooks} />
-              <Route exact path='/saved' component={SavedBooks} />
+              <Route path='/' element={<SearchBooks />} />
+              <Route path='/saved' element={<SavedBooks />} />
             </Routes>
-        </>
       </Router>
     </ApolloProvider>
   );
